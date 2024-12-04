@@ -1,7 +1,13 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-    <div class="text-red bg-blue">zzx</div>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<style lang="css">
+body {
+  margin: 0;
+  user-select: none;
+  white-space: nowrap;
+}
+</style>
