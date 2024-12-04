@@ -10,11 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "nuxt": "^3.14.1592",
+    "pinia": "^2.2.8",
+    "tailwind-merge": "^2.5.5",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.1.0"
+    "@tauri-apps/cli": "^2.1.0",
+    "@unocss/nuxt": "^0.65.1",
+    "unocss": "^0.65.1"
   }
 }
