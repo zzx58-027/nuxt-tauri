@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ["@unocss/nuxt"],
   ssr: false,
   // Enables the development server to be discoverable by other devices when running on iOS physical devices
