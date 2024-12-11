@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "nuxt-tauri",
-  "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "version": "0.2.0",
+  "identifier": "com.tauri.dev.020",
   "build": {
     "frontendDist": "../.output/public",
     "devUrl": "http://localhost:3000",
@@ -33,6 +33,10 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "externalBin": ["binaries/testpy"]
+    "externalBin": [
+      "binaries/testpy",
+      "binaries/excel/extract_sale_data",
+      "binaries/excel/extract_sale_imgs"
+    ]
   }
 }

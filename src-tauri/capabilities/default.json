@@ -10,7 +10,7 @@
       "identifier": "fs:scope",
       "allow": [
         {
-          "path": "$DESKTOP/*"
+          "path": "**"
         }
       ]
     },
@@ -31,6 +31,33 @@
         {
           "name": "binaries/testpy",
           "sidecar": true
+        },
+        {
+          "name": "binaries/excel/extract_sale_data",
+          "sidecar": true,
+          "args": [
+            {
+              "validator": ".*"
+            },
+            {
+              "validator": ".*"
+            }
+          ]
+        },
+        {
+          "name": "binaries/excel/extract_sale_imgs",
+          "sidecar": true,
+          "args": [
+            {
+              "validator": ".*"
+            },
+            {
+              "validator": ".*"
+            },
+            {
+              "validator": ".*"
+            }
+          ]
         }
       ]
     },
