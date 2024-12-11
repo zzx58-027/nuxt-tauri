@@ -7,7 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "drizzle-1": "drizzle-kit push --config=drizzle-dev.config.ts",
+    "drizzle-2": "drizzle-kit push --config=drizzle-prod.config.ts",
+    "drizzle-3": "drizzle-kit studio --config=drizzle-dev.config.ts",
+    "drizzle-4": "drizzle-kit studio --config=drizzle-dev.config.ts"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.1.1",
@@ -17,7 +21,9 @@
     "@tauri-apps/plugin-shell": "~2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "drizzle-orm": "^0.37.0",
     "nuxt": "^3.14.1592",
+    "pg": "^8.13.1",
     "pinia": "^2.2.8",
     "tailwind-merge": "^2.5.5",
     "vue": "latest",
@@ -25,7 +31,9 @@
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2.1.0",
+    "@types/pg": "^8.11.10",
     "@unocss/nuxt": "^0.65.1",
+    "drizzle-kit": "^0.30.0",
     "unocss": "^0.65.1"
   }
 }

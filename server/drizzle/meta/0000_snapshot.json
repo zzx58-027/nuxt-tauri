@@ -1,0 +1,303 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.product_item": {
+      "name": "product_item",
+      "schema": "",
+      "columns": {
+        "deleted": {
+          "name": "deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "deleted_at": {
+          "name": "deleted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uuid": {
+          "name": "uuid",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "customer_product_main_number": {
+          "name": "customer_product_main_number",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customer_product_sub_number": {
+          "name": "customer_product_sub_number",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "product_name": {
+          "name": "product_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "product_desc": {
+          "name": "product_desc",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "product_imgs_urls": {
+          "name": "product_imgs_urls",
+          "type": "json",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.sale_doc": {
+      "name": "sale_doc",
+      "schema": "",
+      "columns": {
+        "doc_name": {
+          "name": "doc_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "doc_size": {
+          "name": "doc_size",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "doc_mime_type": {
+          "name": "doc_mime_type",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "doc_path": {
+          "name": "doc_path",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "outside_doc_type": {
+          "name": "outside_doc_type",
+          "type": "doc_outside_type",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deleted": {
+          "name": "deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "deleted_at": {
+          "name": "deleted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uuid": {
+          "name": "uuid",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "customer_name": {
+          "name": "customer_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customer_po_number": {
+          "name": "customer_po_number",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "factory_po_number": {
+          "name": "factory_po_number",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "overall_lead_time_date": {
+          "name": "overall_lead_time_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "order_accept_date": {
+          "name": "order_accept_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "item_uuids": {
+          "name": "item_uuids",
+          "type": "json",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    },
+    "public.sale_item": {
+      "name": "sale_item",
+      "schema": "",
+      "columns": {
+        "deleted": {
+          "name": "deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "deleted_at": {
+          "name": "deleted_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uuid": {
+          "name": "uuid",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "serial_number_in_sale": {
+          "name": "serial_number_in_sale",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "lead_time_date": {
+          "name": "lead_time_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "order_quantity": {
+          "name": "order_quantity",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "product_spare_quantity": {
+          "name": "product_spare_quantity",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "factory_po_uuids": {
+          "name": "factory_po_uuids",
+          "type": "json",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {},
+      "policies": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "public.doc_outside_type": {
+      "name": "doc_outside_type",
+      "values": [
+        "UNDEFINED",
+        "SPEC",
+        "SM1",
+        "SM2",
+        "SM3",
+        "SM4",
+        "ARTWORK",
+        "PRL",
+        "RETAIL",
+        "IM",
+        "CAD",
+        "SALE"
+      ],
+      "schema": "public"
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "tables": {}
+  }
+}
